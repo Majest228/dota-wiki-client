@@ -1,0 +1,166 @@
+.home
+	position: relative
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+
+.homeBlur
+	position: relative
+	display: flex
+	flex-direction: row
+	width: 100%
+	min-height: 100vh
+
+.homeBlur:after
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: black
+	opacity: 0.5
+
+.container
+	max-width: 1500px
+	width: 100%
+	margin: 0 auto
+	z-index: 998
+	position: relative
+
+.header
+	position: absolute
+	z-index: 999
+	width: 100%
+
+.homeTitle
+	max-width: 1000px
+	margin-top: 180px
+	z-index: 999
+	transform: translate(0%, 0%)
+	animation: slideUp 1s forwards
+	transform: translateY(150%)
+	h3
+		margin: 0 0 20px 0
+		font-size: 60px
+		line-height: 113%
+		letter-spacing: 5px
+		font-weight: 600
+		color: #ffffffee
+		text-transform: uppercase
+		text-shadow: 0px 0px 20px #000
+
+	span
+		font-size: 20px
+		letter-spacing: 2px
+		color: #ffffff90
+		font-weight: 600
+		margin-top: 5px
+		margin-bottom: 20px
+		text-transform: uppercase
+
+.line
+	margin-top: 15px
+	width: 80px
+	height: 3px
+	min-height: 3px
+	background-color: #ff6046
+	border-radius: 1px
+
+.homeBtn
+	margin-top: 30px
+	width: 350px
+	height: 78px
+	border-radius: 6px
+	border: 3px solid #ffffff90
+	box-shadow: 0px 0px 5px #000
+	cursor: pointer
+	display: flex
+	padding: 10px 10px
+	transition: 0.4s all
+	&:hover
+		border: 3px solid #ff6046
+		transform: scale(1.02)
+
+.homeBtnContent
+	margin: 0
+	padding: 0
+	display: flex
+	align-items: center
+
+.homeBtnContentText
+	p
+		margin: 0
+		font-size: 22px
+		text-transform: uppercase
+		letter-spacing: 2px
+		color: #fff
+		text-shadow: 2px 2px 3px #000
+		font-family: Reaver, serif
+		font-weight: 600
+
+		span
+			font-size: 15px
+			color: #858585
+			text-transform: uppercase
+			letter-spacing: 2px
+			text-shadow: 2px 2px 3px #000
+
+.news
+	max-width: 1180px
+	margin: 0 auto
+	position: relative
+	z-index: 999
+	margin-top: 600px
+
+.newsTitle
+	display: flex
+	color: #fff
+@keyframes slideUp
+	0%
+		transform: translateX(150px)
+
+	100%
+		transform: translateX(0%)
+
+@keyframes slideDate
+	0%
+		transform: translateY(0px)
+
+	100%
+		transform: translateY(-140px)
+
+@keyframes slideTitle
+	0%
+		transform: translateY(0px)
+
+	100%
+		transform: translateY(-130px)
+
+@keyframes slideDesc
+	0%
+		transform: translateY(150px)
+
+	100%
+		transform: translateY(-10px)
+
+@keyframes slideDateCloses
+	0%
+		transform: translateY(-140px)
+
+	100%
+		transform: translateY(0)
+
+@keyframes slideTitleCloses
+	0%
+		transform: translateY(130px)
+
+	100%
+		transform: translateY(0)
+
+@keyframes slideDescCloses
+	0%
+		transform: translateY(-10px)
+
+	100%
+		transform: translateY(160px)

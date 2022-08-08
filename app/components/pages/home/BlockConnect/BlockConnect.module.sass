@@ -1,0 +1,91 @@
+.blur
+	position: absolute
+	background-color: rgba(0, 0, 0, 0.5)
+	z-index: 999
+	top: 0
+	height: 100px
+	width: 100%
+	box-shadow: -10px -10px 10px 10px #000
+
+.connect
+	background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/radiant_dire5.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	z-index: 999
+	position: relative
+	min-height: 100vh
+
+.connectBlur
+	position: relative
+	display: flex
+	flex-direction: row
+	width: 100%
+	min-height: 100vh
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: black
+		opacity: 0.5
+.connectContainer
+	max-width: 1010px
+	margin: 0 auto
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+.connectTitle
+	margin: 0
+	text-align: center
+	font-size: 70px
+	color: #e2dace90
+	text-transform: uppercase
+	letter-spacing: 2px
+	z-index: 999
+.connectTitleUp
+	font-size: 70px
+	color: #e2dace90
+	text-transform: uppercase
+	letter-spacing: 2px
+.connectTitleDown
+	font-family: Reaver, serif
+	font-weight: 700
+	font-size: 100px
+	color: #e2dace
+	text-transform: uppercase
+	letter-spacing: 2px
+	line-height: 105%
+.connectDescription
+	z-index: 999
+	p
+		max-width: 1000px
+		margin-top: 30px
+		text-align: center
+		color: #e2dace
+		font-size: 24px
+		line-height: 115%
+		font-weight: 100
+.connectLink
+	z-index: 999
+	border: 3px solid #ffffff50
+	padding: 15px 25px
+	margin: 40px 30px
+	border-radius: 5px
+	width: fit-content
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	transition-duration: 0.2s
+	font-size: 20px
+	font-weight: 700
+	letter-spacing: 2px
+	text-transform: uppercase
+	color: #fff
+	transition: 0.4s all
+	&:hover
+		border: 3px solid #ff6046
+		transform: scale(1.02)

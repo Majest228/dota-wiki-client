@@ -1,0 +1,71 @@
+.dpc
+	background-size: cover
+	min-height: 100vh
+	background-position: center
+	background-repeat: no-repeat
+	height: 100vh
+	z-index: 999
+	background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/dpc.jpg')
+	position: relative
+.dpcBlur
+	position: relative
+	display: flex
+	flex-direction: row
+	width: 100%
+	min-height: 100vh
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		opacity: 0.5
+		background: black
+.dpcContainer
+	z-index: 9999
+	max-width: 1010px
+	margin: 0 auto
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+.dpcTitle
+	margin: 0
+	text-align: center
+	max-width: 1000px
+	font-size: 70px
+	color: #e2dace90
+	text-transform: uppercase
+	letter-spacing: 2px
+	z-index: 999
+.dpcTitleUp
+	font-size: 70px
+	color: #e2dace90
+	text-transform: uppercase
+	letter-spacing: 2px
+.dpcTitleDown
+	font-family: Reaver, serif
+	font-weight: 700
+	font-size: 90px
+	color: #e2dace
+	text-transform: uppercase
+	letter-spacing: 2px
+	line-height: 105%
+.line
+	margin-top: 15px
+	width: 80px
+	height: 3px
+	min-height: 3px
+	background-color: #ff6046
+	border-radius: 1px
+.dpcDescription
+	z-index: 999
+	p
+		max-width: 1000px
+		margin-top: 30px
+		text-align: center
+		color: #e2dace
+		font-size: 24px
+		line-height: 115%
+		font-weight: 100
